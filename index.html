@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+
+<title>Springer-Rundgang</title>
+
+<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="knight.js"></script>
+
+<link rel="stylesheet" type="text/css" href="knight.css" />
+
+</head>
+<body>
+<main id="main">
+
+<div id="no-js">
+	<h3>Warnung:</h3>
+	<p>Für diese Seite musst du Java-Script einschalten.</p>
+</div>
+
+<h1>Springer-Rundgang</h1>
+
+<div id="controls">
+	<button onclick="KNIGHT.oneStepBack()">
+		einen Zug zurück
+	</button>
+	<button onclick="KNIGHT.startNewTour()">
+		Neuen Rundgang starten
+	</button>
+	<div class="help">
+		<input type="checkbox" name="help" id="help" value="true" />
+		<label for="help">Hilfe anzeigen</label>
+	</div>
+</div>
+
+<div id="board">
+	<div id="fields">
+	
+	</div>
+</div>
+<h3>Deine bisherige Tour:</h3>
+<div id="steps">
+</div>
+
+<div id="instructions">
+	<h2>Anleitung</h2>
+	<p>
+		Gesucht ist ein Rundgang für einen Springer auf einem leeren Schachbrett, auf dem dieser jedes Feld genau einmal besucht.
+	</p>
+	<p>
+		Zu Beginn wird der Springer zufällig auf dem Schachbrett platziert. Erlaubt sind nur die Springerzüge (zwei Felder vor/zurück und ein Feld zur Seite oder zwei Felder zur Seite und ein Feld vor/zurück). Die möglichen Züge sind jeweils gelb markiert.
+	</p>
+	<p>
+		Wer glaubt, das gehe nicht: Es gibt über 13 Billionen (sic!) Varianten, bei denen der Springer am Ende der Tour auf einem Feld landet, von wo aus er wieder auf das Startfeld gelangt (so genannte geschlossene Touren).
+	</p>
+	<p>
+		Findest du keine Lösung? Dann schalte doch die Hilfe ein. Diese schlägt dir in grün den/die besten Zug/Züge vor.
+	</p>
+</div>
+
+</main>
+</body>
+</html>
